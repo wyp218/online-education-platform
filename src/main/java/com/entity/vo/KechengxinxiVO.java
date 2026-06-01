@@ -1,0 +1,291 @@
+package com.entity.vo;
+
+import com.entity.KechengxinxiEntity;
+
+import com.baomidou.mybatisplus.annotations.TableName;
+import java.util.Date;
+import org.springframework.format.annotation.DateTimeFormat;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
+import java.io.Serializable;
+ 
+
+/**
+ * 课程信息
+ * @author 
+ * @email 
+ * @date 2024-03-19 17:04:26
+ */
+public class KechengxinxiVO  implements Serializable {
+	private static final long serialVersionUID = 1L;
+
+	 			
+	/**
+	 * 课程类型
+	 */
+	
+	private String kechengleixing;
+		
+	/**
+	 * 课程封面
+	 */
+	
+	private String kechengfengmian;
+		
+	/**
+	 * 上课时间
+	 */
+		
+	@JsonFormat(locale="zh", timezone="GMT+8", pattern="yyyy-MM-dd HH:mm:ss")
+	@DateTimeFormat 
+	private Date shangkeshijian;
+		
+	/**
+	 * 上课地点
+	 */
+	
+	private String shangkedidian;
+		
+	/**
+	 * 课程时长
+	 */
+	
+	private String kechengshizhang;
+		
+	/**
+	 * 课程详情
+	 */
+	
+	private String kechengxiangqing;
+		
+	/**
+	 * 发布时间
+	 */
+		
+	@JsonFormat(locale="zh", timezone="GMT+8", pattern="yyyy-MM-dd HH:mm:ss")
+	@DateTimeFormat 
+	private Date fabushijian;
+		
+	/**
+	 * 教师账号
+	 */
+	
+	private String jiaoshizhanghao;
+		
+	/**
+	 * 教师姓名
+	 */
+	
+	private String jiaoshixingming;
+		
+	/**
+	 * 点击次数
+	 */
+	
+	private Integer clicknum;
+		
+	/**
+	 * 评论数
+	 */
+	
+	private Integer discussnum;
+		
+	/**
+	 * 收藏数
+	 */
+	
+	private Integer storeupnum;
+				
+	
+	/**
+	 * 设置：课程类型
+	 */
+	 
+	public void setKechengleixing(String kechengleixing) {
+		this.kechengleixing = kechengleixing;
+	}
+	
+	/**
+	 * 获取：课程类型
+	 */
+	public String getKechengleixing() {
+		return kechengleixing;
+	}
+				
+	
+	/**
+	 * 设置：课程封面
+	 */
+	 
+	public void setKechengfengmian(String kechengfengmian) {
+		this.kechengfengmian = kechengfengmian;
+	}
+	
+	/**
+	 * 获取：课程封面
+	 */
+	public String getKechengfengmian() {
+		return kechengfengmian;
+	}
+				
+	
+	/**
+	 * 设置：上课时间
+	 */
+	 
+	public void setShangkeshijian(Date shangkeshijian) {
+		this.shangkeshijian = shangkeshijian;
+	}
+	
+	/**
+	 * 获取：上课时间
+	 */
+	public Date getShangkeshijian() {
+		return shangkeshijian;
+	}
+				
+	
+	/**
+	 * 设置：上课地点
+	 */
+	 
+	public void setShangkedidian(String shangkedidian) {
+		this.shangkedidian = shangkedidian;
+	}
+	
+	/**
+	 * 获取：上课地点
+	 */
+	public String getShangkedidian() {
+		return shangkedidian;
+	}
+				
+	
+	/**
+	 * 设置：课程时长
+	 */
+	 
+	public void setKechengshizhang(String kechengshizhang) {
+		this.kechengshizhang = kechengshizhang;
+	}
+	
+	/**
+	 * 获取：课程时长
+	 */
+	public String getKechengshizhang() {
+		return kechengshizhang;
+	}
+				
+	
+	/**
+	 * 设置：课程详情
+	 */
+	 
+	public void setKechengxiangqing(String kechengxiangqing) {
+		this.kechengxiangqing = kechengxiangqing;
+	}
+	
+	/**
+	 * 获取：课程详情
+	 */
+	public String getKechengxiangqing() {
+		return kechengxiangqing;
+	}
+				
+	
+	/**
+	 * 设置：发布时间
+	 */
+	 
+	public void setFabushijian(Date fabushijian) {
+		this.fabushijian = fabushijian;
+	}
+	
+	/**
+	 * 获取：发布时间
+	 */
+	public Date getFabushijian() {
+		return fabushijian;
+	}
+				
+	
+	/**
+	 * 设置：教师账号
+	 */
+	 
+	public void setJiaoshizhanghao(String jiaoshizhanghao) {
+		this.jiaoshizhanghao = jiaoshizhanghao;
+	}
+	
+	/**
+	 * 获取：教师账号
+	 */
+	public String getJiaoshizhanghao() {
+		return jiaoshizhanghao;
+	}
+				
+	
+	/**
+	 * 设置：教师姓名
+	 */
+	 
+	public void setJiaoshixingming(String jiaoshixingming) {
+		this.jiaoshixingming = jiaoshixingming;
+	}
+	
+	/**
+	 * 获取：教师姓名
+	 */
+	public String getJiaoshixingming() {
+		return jiaoshixingming;
+	}
+				
+	
+	/**
+	 * 设置：点击次数
+	 */
+	 
+	public void setClicknum(Integer clicknum) {
+		this.clicknum = clicknum;
+	}
+	
+	/**
+	 * 获取：点击次数
+	 */
+	public Integer getClicknum() {
+		return clicknum;
+	}
+				
+	
+	/**
+	 * 设置：评论数
+	 */
+	 
+	public void setDiscussnum(Integer discussnum) {
+		this.discussnum = discussnum;
+	}
+	
+	/**
+	 * 获取：评论数
+	 */
+	public Integer getDiscussnum() {
+		return discussnum;
+	}
+				
+	
+	/**
+	 * 设置：收藏数
+	 */
+	 
+	public void setStoreupnum(Integer storeupnum) {
+		this.storeupnum = storeupnum;
+	}
+	
+	/**
+	 * 获取：收藏数
+	 */
+	public Integer getStoreupnum() {
+		return storeupnum;
+	}
+			
+}

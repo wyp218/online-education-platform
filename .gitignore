@@ -1,0 +1,9 @@
+target/
+*.class
+node_modules/
+.idea/
+*.iml
+*.log
+.DS_Store
+*.bak
+*.bak2
